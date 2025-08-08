@@ -82,8 +82,8 @@ export default function HomePage() {
                   boxShadow: "0 4px 24px rgba(30,41,59,0.12)",
                   objectFit: "cover",
                   marginBottom: "0",
-                  width: "220px",
-                  height: "220px",
+                  width: "500px",
+                  height: "500px",
                 }}
                 priority
               />
@@ -490,14 +490,14 @@ export default function HomePage() {
                   <h4 style={{ color: "#1e293b", fontWeight: 600 }}>
                     Email Us
                   </h4>
-                  <p style={{ color: "#64748b" }}>info@qodecore.com</p>
+                  <p style={{ color: "#64748b" }}>syedfarhanalisqa@gmail.com</p>
                 </div>
               </div>
               <div className="contact-item">
                 <div className="contact-icon">📞</div>
                 <div>
                   <h4 style={{ color: "#1e293b", fontWeight: 600 }}>Call Us</h4>
-                  <p style={{ color: "#64748b" }}>+1 (555) 123-4567</p>
+                  <p style={{ color: "#64748b" }}>+92 (302) 222-3000</p>
                 </div>
               </div>
               <div className="contact-item">
@@ -507,7 +507,7 @@ export default function HomePage() {
                     Visit Us
                   </h4>
                   <p style={{ color: "#64748b" }}>
-                    123 Tech Street, Digital City, TC 12345
+                    House No 3/R-3, Allama Iqbal Colony Chammanabad 
                   </p>
                 </div>
               </div>
@@ -518,7 +518,7 @@ export default function HomePage() {
                     Business Hours
                   </h4>
                   <p style={{ color: "#64748b" }}>
-                    Mon - Fri: 9:00 AM - 6:00 PM
+                    Mon - Fri: 9:00 AM - 4:00 PKT
                   </p>
                 </div>
               </div>
