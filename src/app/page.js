@@ -1,6 +1,7 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import ContactForm from "../components/ContactForm";
+import Image from "next/image";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -20,42 +21,6 @@ export const metadata = {
 export default function HomePage() {
   return (
     <>
-      {/* Header */}
-      <header className="header">
-        <nav className="nav">
-          <a href="#" className="logo">
-            Quality Code Core Solutions
-          </a>
-          <ul className="nav-menu">
-            <li>
-              <a href="#home" className="nav-link">
-                Home
-              </a>
-            </li>
-            <li>
-              <a href="#services" className="nav-link">
-                Services
-              </a>
-            </li>
-            <li>
-              <a href="#process" className="nav-link">
-                Process
-              </a>
-            </li>
-            <li>
-              <a href="#about" className="nav-link">
-                About
-              </a>
-            </li>
-            <li>
-              <a href="#contact" className="nav-link">
-                Contact
-              </a>
-            </li>
-          </ul>
-        </nav>
-      </header>
-
       {/* Hero Section */}
       <section className="hero" id="home">
         <div className="hero-container">
@@ -79,89 +44,180 @@ export default function HomePage() {
               </a>
             </div>
           </div>
-          <div className="hero-infographic">
-            <div className="infographic-container">
-              <h3
+        </div>
+      </section>
+      {/* CEO About Me Section */}
+      <section className="ceo-about" id="ceo-about">
+        <div
+          className="about-container"
+          style={{
+            maxWidth: "1920px",
+            margin: "0 auto",
+            padding: "3rem 1rem",
+            display: "flex",
+            justifyContent: "center",
+          }}
+        >
+          <div
+            className="ceo-grid"
+            style={{
+              width: "1480px",
+              background: "#fff",
+              borderRadius: "1.5rem",
+              boxShadow: "0 4px 24px rgba(30,41,59,0.08)",
+              padding: "2.5rem 2rem",
+              alignItems: "center",
+              gap: "2.5rem",
+            }}
+          >
+            <div style={{ display: "flex", justifyContent: "center" }}>
+              <Image
+                src="/Syed-Farhan-Ali.jpg"
+                alt="CEO"
+                className="ceo-image"
+                width={500}
+                height={500}
                 style={{
-                  textAlign: "center",
-                  marginBottom: "1.5rem",
+                  borderRadius: "1rem",
+                  boxShadow: "0 4px 24px rgba(30,41,59,0.12)",
+                  objectFit: "cover",
+                  marginBottom: "0",
+                  width: "220px",
+                  height: "220px",
+                }}
+                priority
+              />
+            </div>
+            <div className="ceo-content" style={{ minWidth: "260px" }}>
+              <h2
+                style={{
+                  marginBottom: "0.5rem",
                   color: "#1e293b",
                   fontWeight: 700,
                 }}
               >
-                Our Development Process
-              </h3>
-              <div className="process-flow">
-                <div className="process-step">
-                  <div className="step-number">1</div>
-                  <div className="step-content">
-                    <h4>Analysis & Planning</h4>
-                    <p>Requirements gathering and project roadmap creation</p>
-                  </div>
-                </div>
-                <div className="process-step">
-                  <div className="step-number">2</div>
-                  <div className="step-content">
-                    <h4>Design & Architecture</h4>
-                    <p>UI/UX design and technical architecture planning</p>
-                  </div>
-                </div>
-                <div className="process-step">
-                  <div className="step-number">3</div>
-                  <div className="step-content">
-                    <h4>Development</h4>
-                    <p>Agile development with continuous integration</p>
-                  </div>
-                </div>
-                <div className="process-step">
-                  <div className="step-number">4</div>
-                  <div className="step-content">
-                    <h4>Quality Assurance</h4>
-                    <p>Comprehensive testing and quality validation</p>
-                  </div>
-                </div>
-                <div className="process-step">
-                  <div className="step-number">5</div>
-                  <div className="step-content">
-                    <h4>Deployment & Support</h4>
-                    <p>Production deployment and ongoing maintenance</p>
-                  </div>
-                </div>
+                Syed Farhan Ali
+              </h2>
+              <h4
+                style={{
+                  color: "#2563eb",
+                  marginBottom: "1rem",
+                  fontWeight: 600,
+                }}
+              >
+                CEO @ QodeCore Solutions
+              </h4>
+              <p style={{ marginBottom: "1rem", color: "#334155" }}>
+                As the CEO of <strong>QodeCore Solutions</strong>, I am
+                committed to delivering high-quality software and digital
+                solutions that empower businesses to grow and succeed. My
+                leadership is focused on innovation, technical excellence, and
+                building a culture of continuous improvement.
+              </p>
+              <ul
+                style={{
+                  marginBottom: "1.5rem",
+                  color: "#475569",
+                  paddingLeft: "1.2rem",
+                }}
+              >
+                <li>
+                  Guiding the strategic vision and direction of QodeCore
+                  Solutions to deliver impactful software products and services.
+                </li>
+                <li>
+                  Overseeing project delivery, ensuring robust quality
+                  assurance, and maintaining high standards across all client
+                  engagements.
+                </li>
+                <li>
+                  Fostering a collaborative environment where teams can
+                  innovate, solve complex challenges, and exceed client
+                  expectations.
+                </li>
+                <li>
+                  Building strong client relationships through transparency,
+                  reliability, and a commitment to long-term success.
+                </li>
+              </ul>
+              <p style={{ marginBottom: "1.5rem", color: "#334155" }}>
+                My passion lies in driving digital transformation, nurturing
+                talent, and ensuring every project reflects our core values of
+                quality, trust, and excellence.
+              </p>
+              <div
+                className="ceo-mission-vision"
+                style={{ marginTop: "1.5rem" }}
+              >
+                <h3
+                  style={{
+                    color: "#2563eb",
+                    marginBottom: "0.5rem",
+                    fontWeight: 600,
+                  }}
+                >
+                  Mission
+                </h3>
+                <p style={{ color: "#475569", marginBottom: "1rem" }}>
+                  To deliver innovative, reliable, and scalable software
+                  solutions that help our clients achieve their business goals
+                  and stay ahead in a rapidly evolving digital world.
+                </p>
+                <h3
+                  style={{
+                    color: "#2563eb",
+                    marginBottom: "0.5rem",
+                    fontWeight: 600,
+                  }}
+                >
+                  Vision
+                </h3>
+                <p style={{ color: "#475569" }}>
+                  To be recognized as a trusted leader in software development
+                  and quality assurance, known for our commitment to excellence,
+                  client satisfaction, and positive impact on the tech industry.
+                </p>
               </div>
             </div>
           </div>
         </div>
       </section>
-
       {/* Statistics Section */}
       <section className="statistics">
         <div className="stats-container">
           <div className="section-header">
             <h2 className="section-title">Our Track Record</h2>
             <p className="section-subtitle">
-              Numbers that speak for our expertise and commitment to
-              excellence
+              Numbers that speak for our expertise and commitment to excellence
             </p>
           </div>
           <div className="stats-grid">
             <div className="stat-card">
               <div className="stat-icon">📊</div>
-              <span className="stat-number" data-target="200">0</span>
+              <span className="stat-number" data-target="15">
+                15
+              </span>
               <span className="stat-label">Projects Completed</span>
             </div>
             <div className="stat-card">
               <div className="stat-icon">🏆</div>
-              <span className="stat-number" data-target="98">0</span>
+              <span className="stat-number" data-target="98%">
+                100%
+              </span>
               <span className="stat-label">Client Satisfaction</span>
             </div>
             <div className="stat-card">
               <div className="stat-icon">⏱️</div>
-              <span className="stat-number" data-target="99">0</span>
+              <span className="stat-number" data-target="100%">
+                100%
+              </span>
               <span className="stat-label">On-Time Delivery</span>
             </div>
             <div className="stat-card">
               <div className="stat-icon">🔧</div>
-              <span className="stat-number" data-target="24">0</span>
+              <span className="stat-number" data-target="24 hours">
+                24/5
+              </span>
               <span className="stat-label">Technical Support</span>
             </div>
           </div>
@@ -174,8 +230,8 @@ export default function HomePage() {
           <div className="section-header">
             <h2 className="section-title">Our Proven Methodology</h2>
             <p className="section-subtitle">
-              A systematic approach that ensures project success from
-              conception to delivery
+              A systematic approach that ensures project success from conception
+              to delivery
             </p>
           </div>
           <div className="process-timeline">
@@ -218,9 +274,9 @@ export default function HomePage() {
               <div className="timeline-content">
                 <h4>🧪 Quality Assurance</h4>
                 <p>
-                  Comprehensive testing including unit tests, integration
-                  tests, performance testing, security audits, and user
-                  acceptance testing.
+                  Comprehensive testing including unit tests, integration tests,
+                  performance testing, security audits, and user acceptance
+                  testing.
                 </p>
               </div>
             </div>
@@ -248,7 +304,10 @@ export default function HomePage() {
               Web-Based Solutions & Quality Assurance Services
             </h4>
             <p>
-              QodeCore delivers robust web-based software solutions and end-to-end quality assurance services to help businesses scale with confidence. From development to deployment, we ensure clean code, tested features, and digital excellence.
+              QodeCore delivers robust web-based software solutions and
+              end-to-end quality assurance services to help businesses scale
+              with confidence. From development to deployment, we ensure clean
+              code, tested features, and digital excellence.
             </p>
             <ul className="features-list">
               <li>Certified QA Engineers</li>
@@ -274,81 +333,79 @@ export default function HomePage() {
             </h3>
             <div className="skill-item">
               <div className="skill-header">
-                <span className="skill-name">
-                  Quality Assurance & Testing
-                </span>
-                <span className="skill-percentage">95%</span>
+                <span className="skill-name">Quality Assurance & Testing</span>
+                <span className="skill-percentage">100%</span>
               </div>
               <div className="skill-bar">
                 <div
                   className="skill-progress"
                   style={{ width: "0%" }}
-                  data-width="95%"
+                  data-width="100%"
                 ></div>
               </div>
             </div>
             <div className="skill-item">
               <div className="skill-header">
                 <span className="skill-name">React/Next.js Development</span>
-                <span className="skill-percentage">92%</span>
+                <span className="skill-percentage">99%</span>
               </div>
               <div className="skill-bar">
                 <div
                   className="skill-progress"
                   style={{ width: "0%" }}
-                  data-width="92%"
+                  data-width="99%"
                 ></div>
               </div>
             </div>
             <div className="skill-item">
               <div className="skill-header">
                 <span className="skill-name">Node.js & Backend APIs</span>
-                <span className="skill-percentage">88%</span>
+                <span className="skill-percentage">99%</span>
               </div>
               <div className="skill-bar">
                 <div
                   className="skill-progress"
                   style={{ width: "0%" }}
-                  data-width="88%"
+                  data-width="99%"
                 ></div>
               </div>
             </div>
             <div className="skill-item">
               <div className="skill-header">
                 <span className="skill-name">Database Management</span>
-                <span className="skill-percentage">85%</span>
+                <span className="skill-percentage">99%</span>
               </div>
               <div className="skill-bar">
                 <div
                   className="skill-progress"
                   style={{ width: "0%" }}
-                  data-width="85%"
+                  data-width="99%"
                 ></div>
               </div>
             </div>
             <div className="skill-item">
               <div className="skill-header">
                 <span className="skill-name">Cloud & DevOps</span>
-                <span className="skill-percentage">82%</span>
+                <span className="skill-percentage">99%</span>
               </div>
               <div className="skill-bar">
                 <div
                   className="skill-progress"
                   style={{ width: "0%" }}
-                  data-width="82%"
+                  data-width="99%"
                 ></div>
               </div>
             </div>
             <div className="skill-item">
               <div className="skill-header">
                 <span className="skill-name">UI/UX Design</span>
-                <span className="skill-percentage">78%</span>
+                <span className="skill-percentage">99%</span>
               </div>
               <div className="skill-bar">
                 <div
                   className="skill-progress"
                   style={{ width: "0%" }}
-                  data-width="78%"
+                  data-width="99%"
                 ></div>
               </div>
             </div>
@@ -400,9 +457,7 @@ export default function HomePage() {
             <div className="service-card">
               <div className="service-icon">🚀</div>
               <h3>DevOps & Deployment</h3>
-              <p>
-                Automated deployment and cloud infrastructure management.
-              </p>
+              <p>Automated deployment and cloud infrastructure management.</p>
             </div>
           </div>
         </div>
@@ -435,17 +490,13 @@ export default function HomePage() {
                   <h4 style={{ color: "#1e293b", fontWeight: 600 }}>
                     Email Us
                   </h4>
-                  <p style={{ color: "#64748b" }}>
-                    info@techprosolutions.com
-                  </p>
+                  <p style={{ color: "#64748b" }}>info@qodecore.com</p>
                 </div>
               </div>
               <div className="contact-item">
                 <div className="contact-icon">📞</div>
                 <div>
-                  <h4 style={{ color: "#1e293b", fontWeight: 600 }}>
-                    Call Us
-                  </h4>
+                  <h4 style={{ color: "#1e293b", fontWeight: 600 }}>Call Us</h4>
                   <p style={{ color: "#64748b" }}>+1 (555) 123-4567</p>
                 </div>
               </div>
@@ -487,148 +538,6 @@ export default function HomePage() {
           </div>
         </div>
       </section>
-
-      {/* Footer */}
-      <footer className="footer">
-        <div className="footer-container">
-          <div className="footer-grid">
-            <div className="footer-brand">
-              <h3>Quality Code Core Solutions</h3>
-              <p>
-                Leading provider of software quality assurance and web
-                development services. We help businesses transform their
-                digital presence with cutting-edge technology solutions.
-              </p>
-              <div style={{ marginTop: "1rem" }}>
-                <span style={{ color: "#2563eb", fontWeight: 600 }}>
-                  ISO 9001 Certified
-                </span>{" "}
-                |
-                <span style={{ color: "#2563eb", fontWeight: 600 }}>
-                  GDPR Compliant
-                </span>
-              </div>
-            </div>
-            <div className="footer-section">
-              <h4>Services</h4>
-              <ul className="footer-links">
-                <li>
-                  <a href="#services">Quality Assurance</a>
-                </li>
-                <li>
-                  <a href="#services">Web Development</a>
-                </li>
-                <li>
-                  <a href="#services">Mobile Apps</a>
-                </li>
-                <li>
-                  <a href="#services">Performance Testing</a>
-                </li>
-                <li>
-                  <a href="#services">Security Audits</a>
-                </li>
-              </ul>
-            </div>
-            <div className="footer-section">
-              <h4>Company</h4>
-              <ul className="footer-links">
-                <li>
-                  <a href="#about">About Us</a>
-                </li>
-                <li>
-                  <a href="#process">Our Process</a>
-                </li>
-              </ul>
-            </div>
-            <div className="footer-section">
-              <h4>Support</h4>
-              <ul className="footer-links">
-                <li>
-                  <a href="#contact">Contact Us</a>
-                </li>
-                <li>
-                  <a href="#">Privacy Policy</a>
-                </li>
-                <li>
-                  <a href="#">Terms of Service</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div className="footer-bottom">
-          <p>
-            &copy; 2025 QodeCode Solutions. All rights reserved. |
-            Professional SQA & Web Application Development Services
-          </p>
-        </div>
-      </footer>
-      {/* Automated Counter Script */}
-      <script
-        dangerouslySetInnerHTML={{
-          __html: `
-    document.addEventListener('DOMContentLoaded', function() {
-      // Stat counter
-      document.querySelectorAll('.stat-number').forEach(function(el) {
-        const target = parseInt(el.getAttribute('data-target'), 10);
-        let count = 0;
-        const duration = 1200;
-        const frameRate = 60;
-        const totalFrames = Math.round(duration / (1000 / frameRate));
-        const increment = target / totalFrames;
-        function update() {
-          count += increment;
-          if (count < target) {
-            el.textContent = Math.floor(count);
-            requestAnimationFrame(update);
-          } else {
-            el.textContent = target;
-          }
-        }
-        el.textContent = "0";
-        update();
-      });
-
-      // Skill bar animation
-      function animateSkillBars() {
-        document.querySelectorAll('.skill-progress').forEach(function(bar) {
-          const rect = bar.getBoundingClientRect();
-          const inView = rect.top < window.innerHeight && rect.bottom > 0;
-          if (inView && bar.style.width !== bar.getAttribute('data-width')) {
-            bar.style.transition = 'width 1.5s cubic-bezier(.4,0,.2,1)';
-            bar.style.background = 'linear-gradient(90deg, #2563eb 60%, #60a5fa 100%)';
-            bar.style.width = bar.getAttribute('data-width');
-          }
-        });
-      }
-      window.addEventListener('scroll', animateSkillBars);
-      document.addEventListener('DOMContentLoaded', animateSkillBars);
-
-      // Timeline animation
-      function animateTimeline() {
-        document.querySelectorAll('.timeline-item').forEach(function(item, idx) {
-          const rect = item.getBoundingClientRect();
-          const inView = rect.top < window.innerHeight && rect.bottom > 0;
-          if (inView && item.style.opacity !== "1") {
-            item.style.animation = 'cardSlideIn 0.8s cubic-bezier(.4,0,.2,1) forwards';
-            item.style.animationDelay = (idx * 0.2) + 's';
-          }
-        });
-        document.querySelectorAll('.timeline-marker').forEach(function(dot, idx) {
-          const rect = dot.getBoundingClientRect();
-          const inView = rect.top < window.innerHeight && rect.bottom > 0;
-          if (inView && dot.style.opacity !== "1") {
-            dot.style.animation = 'dotPop 0.6s cubic-bezier(.4,0,.2,1) forwards';
-            dot.style.animationDelay = (idx * 0.2) + 's';
-          }
-        });
-      }
-      window.addEventListener('scroll', animateTimeline);
-      document.addEventListener('DOMContentLoaded', animateTimeline);
-    });
-  `,
-        }}
-      />
     </>
   );
 }
