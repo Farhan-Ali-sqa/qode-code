@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "QodeCode Solutions - SQA & Web Application Development Services",
+  title: "QodeCore Solutions - SQA & Web Application Development Services",
   description: "Professional SQA & Web Application Development Services",
 };
 
@@ -24,7 +24,7 @@ export default function HomePage() {
       <header className="header">
         <nav className="nav">
           <a href="#" className="logo">
-            QodeCode Solutions
+            Quality Code Core Solutions
           </a>
           <ul className="nav-menu">
             <li>
@@ -493,7 +493,7 @@ export default function HomePage() {
         <div className="footer-container">
           <div className="footer-grid">
             <div className="footer-brand">
-              <h3>TechPro Solutions</h3>
+              <h3>Quality Code Core Solutions</h3>
               <p>
                 Leading provider of software quality assurance and web
                 development services. We help businesses transform their
@@ -538,15 +538,6 @@ export default function HomePage() {
                 <li>
                   <a href="#process">Our Process</a>
                 </li>
-                <li>
-                  <a href="#">Case Studies</a>
-                </li>
-                <li>
-                  <a href="#">Careers</a>
-                </li>
-                <li>
-                  <a href="#">Blog</a>
-                </li>
               </ul>
             </div>
             <div className="footer-section">
@@ -554,12 +545,6 @@ export default function HomePage() {
               <ul className="footer-links">
                 <li>
                   <a href="#contact">Contact Us</a>
-                </li>
-                <li>
-                  <a href="#">Help Center</a>
-                </li>
-                <li>
-                  <a href="#">Documentation</a>
                 </li>
                 <li>
                   <a href="#">Privacy Policy</a>
